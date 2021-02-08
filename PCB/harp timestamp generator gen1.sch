@@ -9409,7 +9409,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="VCC1" library="supply1" deviceset="VCCIO" device="" value="VDDIO"/>
 <part name="STATE" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="330"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="910"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="VCC2" library="supply1" deviceset="VCCIO" device="" value="VDDIO"/>
 </parts>
