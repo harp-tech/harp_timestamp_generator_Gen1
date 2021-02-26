@@ -67,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -2553,63 +2555,6 @@ Source: AVX .. aphvc.pdf</description>
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="CNP-miscellaneous">
-<packages>
-<package name="OSCILLATOR_3.2X2.5">
-<text x="-2.26" y="2.02" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.36" y="-2.98" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
-<wire x1="-0.1" y1="1.25" x2="0.1" y2="1.25" width="0.254" layer="21"/>
-<wire x1="-0.1" y1="-1.25" x2="0.1" y2="-1.25" width="0.254" layer="21"/>
-<smd name="P$1" x="-1.05" y="-1" dx="0.9" dy="1.1" layer="1"/>
-<smd name="P$2" x="1.05" y="-1" dx="0.9" dy="1.1" layer="1"/>
-<smd name="P$3" x="1.05" y="1" dx="0.9" dy="1.1" layer="1"/>
-<smd name="P$4" x="-1.05" y="1" dx="0.9" dy="1.1" layer="1"/>
-<circle x="-2.2" y="-0.8" radius="0.14141875" width="0" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="OSCILLATOR">
-<pin name="VDD" x="-5.08" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="GND" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="STANDBY#" x="-5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<text x="10.16" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="10.16" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="4.064" y="-1.651" size="0.8128" layer="94" font="vector" ratio="15">GND</text>
-<text x="-6.096" y="1.016" size="0.8128" layer="94" font="vector" ratio="15">VDD</text>
-<text x="2.921" y="1.016" size="0.8128" layer="94" font="vector" ratio="15">Output</text>
-<text x="-7.366" y="-1.651" size="0.8128" layer="94" font="vector" ratio="15">!Standby</text>
-<pin name="OUTPUT" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="OSCILLATOR">
-<gates>
-<gate name="G$1" symbol="OSCILLATOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="OSCILLATOR_3.2X2.5">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="OUTPUT" pad="P$3"/>
-<connect gate="G$1" pin="STANDBY#" pad="P$1"/>
-<connect gate="G$1" pin="VDD" pad="P$4"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9376,6 +9321,65 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="harp rfid reader v1.0">
+<description>Generated from &lt;b&gt;harp rfid reader v1.0.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="CNP-MISCELLANEOUS_OSCILLATOR_3.2X2.5">
+<circle x="-2.2" y="-0.8" radius="0.14141875" width="0" layer="21"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="1.25" x2="0.1" y2="1.25" width="0.254" layer="21"/>
+<wire x1="-0.1" y1="-1.25" x2="0.1" y2="-1.25" width="0.254" layer="21"/>
+<smd name="P$1" x="-1.3" y="-1.05" dx="1.4" dy="1.2" layer="1" roundness="20"/>
+<smd name="P$2" x="1.3" y="-1.05" dx="1.4" dy="1.2" layer="1" roundness="20"/>
+<smd name="P$3" x="1.3" y="1.05" dx="1.4" dy="1.2" layer="1" roundness="20"/>
+<smd name="P$4" x="-1.3" y="1.05" dx="1.4" dy="1.2" layer="1" roundness="20"/>
+<text x="-2.26" y="2.02" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.36" y="-2.98" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CNP-MISCELLANEOUS_OSCILLATOR">
+<wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<pin name="GND" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="OUTPUT" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="STANDBY#" x="-5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="VDD" x="-5.08" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<text x="10.16" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="10.16" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="4.064" y="-1.651" size="0.8128" layer="94" font="vector" ratio="15">GND</text>
+<text x="-6.096" y="1.016" size="0.8128" layer="94" font="vector" ratio="15">VDD</text>
+<text x="2.921" y="1.016" size="0.8128" layer="94" font="vector" ratio="15">Output</text>
+<text x="-7.366" y="-1.651" size="0.8128" layer="94" font="vector" ratio="15">!Standby</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CNP-MISCELLANEOUS_OSCILLATOR">
+<gates>
+<gate name="G$1" symbol="CNP-MISCELLANEOUS_OSCILLATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CNP-MISCELLANEOUS_OSCILLATOR_3.2X2.5">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="OUTPUT" pad="P$3"/>
+<connect gate="G$1" pin="STANDBY#" pad="P$1"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9394,7 +9398,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0402" value="100nF"/>
 <part name="VCC6" library="supply1" deviceset="VCCIO" device="" value="VDDIO"/>
 <part name="FRAME4" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="OSC1" library="CNP-miscellaneous" deviceset="OSCILLATOR" device="" value=""/>
 <part name="GND59" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0402" value="100nF"/>
 <part name="GND60" library="supply1" deviceset="GND" device=""/>
@@ -9412,6 +9415,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="910"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="VCC2" library="supply1" deviceset="VCCIO" device="" value="VDDIO"/>
+<part name="OSC1" library="harp rfid reader v1.0" deviceset="CNP-MISCELLANEOUS_OSCILLATOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9449,10 +9453,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="DRAWING_NAME" x="344.17" y="15.24" size="2.54" layer="94" font="vector"/>
 <attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94" font="vector"/>
 <attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94" font="vector"/>
-</instance>
-<instance part="OSC1" gate="G$1" x="129.54" y="93.98" smashed="yes">
-<attribute name="VALUE" x="139.7" y="91.44" size="1.778" layer="96"/>
-<attribute name="NAME" x="139.7" y="93.98" size="1.778" layer="95"/>
 </instance>
 <instance part="GND59" gate="1" x="134.62" y="83.82" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="137.16" y="81.28" size="1.778" layer="96" rot="MR0"/>
@@ -9508,6 +9508,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </instance>
 <instance part="VCC2" gate="G$1" x="226.06" y="137.16" smashed="yes">
 <attribute name="VALUE" x="223.52" y="134.62" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="OSC1" gate="G$1" x="129.54" y="93.98" smashed="yes">
+<attribute name="NAME" x="126.238" y="97.282" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -9567,7 +9570,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="226.06" y="132.08"/>
 </segment>
 <segment>
-<pinref part="OSC1" gate="G$1" pin="VDD"/>
 <wire x1="124.46" y1="99.06" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="101.6" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -9575,6 +9577,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="114.3" y1="101.6" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
 <junction x="114.3" y="101.6"/>
 <pinref part="VCC10" gate="G$1" pin="VCCIO"/>
+<pinref part="OSC1" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="243.84" y1="160.02" x2="243.84" y2="162.56" width="0.1524" layer="91"/>
@@ -9585,9 +9588,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="OSC1" gate="G$1" pin="GND"/>
 <pinref part="GND59" gate="1" pin="GND"/>
 <wire x1="134.62" y1="86.36" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="OSC1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -9651,10 +9654,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="OSC1" class="0">
 <segment>
-<pinref part="OSC1" gate="G$1" pin="OUTPUT"/>
 <wire x1="134.62" y1="99.06" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="PR1/XTAL1"/>
 <wire x1="134.62" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="OSC1" gate="G$1" pin="OUTPUT"/>
 </segment>
 </net>
 <net name="CLKOUT" class="0">
